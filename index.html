@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESTAURENT APP</title>
+
+<body>
+    <div class="container">
+        <h1>ORDER ITEM</h1>
+        <label for="amount_input" id="amount_label" class="form-label">Amount</label>
+        <input type="number" id="amount_input" />
+
+        <label for="description_input" id="description_label" class="form-label">Table Number</label>
+        <input id="description_input" type="text" />
+
+        <label for="category_input" id="category_label" class="form-label">Items</label>
+        
+        <select id="category_input">
+            <option value="Pizza">Pizza</option>
+            <option value="Burger">Burger</option>
+            <option value="Chownmine">Chownmine</option>
+            <option value="Momos">Momos</option>
+            <option value="Paratha">Paratha</option>
+            <option value="Manchuriyan">Manchuriyan</option>
+            <option value="Soup">Soup</option>
+            <option value="Shahi Thali">Shahi Thali</option>
+        </select>
+
+        <button id="submit">Order</button>
+        <div id="form">
+            <h2>Table Order</h2>
+            <table style="border-style:solid;">
+            <tr>
+                <th>Ammount ///</th>
+                <th>Table Number ///</th>
+                <th>Category</th>
+            </tr>
+        </table>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
